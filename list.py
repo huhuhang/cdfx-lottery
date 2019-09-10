@@ -44,6 +44,8 @@ if __name__ == "__main__":
             for row in df[col_names].iterrows():
                 table.add_row(list(row[1]))
             print(table)
+            print(f"目前有 {len(df)} 个楼盘正在报名摇号")
+            print(f"前往登记（9:00-18:00）：https://zw.cdzj.chengdu.gov.cn/lottery/accept/index")
             break
         except:
             pass
